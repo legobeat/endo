@@ -1,7 +1,7 @@
 {
   "name": "@endo/patterns",
-  "version": "1.4.4",
-  "description": "Description forthcoming.",
+  "version": "1.4.6",
+  "description": "Pattern matching for Passable objects, expressed as Passable data",
   "keywords": [],
   "author": "Endo contributors",
   "license": "Apache-2.0",
@@ -40,7 +40,9 @@
   },
   "devDependencies": {
     "@endo/init": "workspace:^",
+    "@endo/pass-style": "workspace:^",
     "@endo/ses-ava": "workspace:^",
+    "@fast-check/ava": "^1.1.5",
     "ava": "^6.1.3",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.57.0",

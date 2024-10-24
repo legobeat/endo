@@ -168,6 +168,8 @@ function on `globalThis`.
 ```js
 import 'ses';
 
+lockdown();
+
 const c = new Compartment({
   globals: {
     print: harden(console.log),
@@ -301,7 +303,7 @@ const c1 = new Compartment({
     const moduleLocation = locate(moduleSpecifier);
     const moduleText = await retrieve(moduleLocation);
     return {
-        source: new ModuleSource(moduleText, moduleLocation);
+        source: new ModuleSource(moduleText, moduleLocation)
     };
   },
   __options__: true, // temporary migration affordance
